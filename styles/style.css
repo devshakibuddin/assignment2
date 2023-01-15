@@ -24,9 +24,9 @@ body{
     color: #FFFFFF;
 }
 
-/* =============
+/* ====================
     HEADER START 
-================ */
+======================= */
 .menu{
     background: rgba(255, 144, 14, 0.1); 
     padding-bottom: 50px;
@@ -79,12 +79,12 @@ body{
     color: #727272;
 }
 
-/* ================
+/* ========================
 Header style ENDED  
-====================*/
-/* ================
+============================*/
+/* ========================
 our-feature style STARTED  
-====================*/
+============================*/
 
 .our-feature{
     display: flex;
@@ -92,6 +92,7 @@ our-feature style STARTED
     margin-top: 85px
 
 }
+
 .img-items{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -109,10 +110,12 @@ our-feature style STARTED
     color: #727272;
     margin: 0;
 }
+
 .our-feature-details-title .black{
     font-weight: 700;
     color: #131313;
 }
+
 .our-feature-details-title .highlight{
     font-weight: 700;
     color: #FF900E;
@@ -128,12 +131,12 @@ our-feature style STARTED
     padding-bottom: 30px;
 }
 
-/*===================== 
+/*============================== 
     Feature style ENDED
-====================== */
-/*===================== 
+=============================== */
+/*============================== 
     Experience style STARTED
-====================== */
+=============================== */
 
 .experience{
     display: flex;
@@ -189,6 +192,9 @@ our-feature style STARTED
     margin: 0;
 }
 
+.experience-img{
+    position: relative;
+}
 
 .btn-exp{
     padding: 45px;
@@ -200,6 +206,10 @@ our-feature style STARTED
     margin: 0;
     border-radius: 8px;
     color: #FFFFFF;
+    position: absolute;
+    bottom: -125px;
+    left: -100px;
+    transform: translate(10px, 10px);
 }
 
 .exp-text{
@@ -209,12 +219,12 @@ our-feature style STARTED
     color: #FFFFFF;
 }
 
-/*===================== 
+/*============================== 
     Experience style ENDED
-====================== */
-/*===================== 
+=============================== */
+/*============================== 
     Some Fact style STARTED
-====================== */
+====================== =========*/
 
 .some-fact-title{
     font-weight: 700;
@@ -242,6 +252,11 @@ our-feature style STARTED
     border: 1px solid #FF900E;
     padding: 35px;
     border-radius: 8px;
+    transition: 0.8s;
+}
+
+.item:hover{
+    transform: translate3d(10px, -40px, 0px);
 }
 
 .item h5{
@@ -259,12 +274,12 @@ our-feature style STARTED
     margin: 0;
 }
 
-/*===================== 
+/*============================== 
     Some Fact style ENDED
-====================== */
-/*===================== 
+====================== =========*/
+/*============================== 
     Services style started
-====================== */
+====================== =========*/
 
 .services{
     margin-top: 90px;
@@ -281,8 +296,8 @@ our-feature style STARTED
 }
 
 .services-items{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     text-align: center;
     margin-top: 65px;
@@ -312,24 +327,13 @@ our-feature style STARTED
     font-weight: 700;
 }
 
-
-
-
-/*===================== 
+/*============================== 
    Services style ENDED
-====================== */
+====================== =========*/
 
-
-
-
-
-
-
-
-
-/*===================== 
+/*============================== 
     Sponsor style started
-====================== */
+=============================== */
 
 .sponsor{
     display: flex;
@@ -357,12 +361,167 @@ our-feature style STARTED
     margin-top: 50px;
 }
 
-
-
-
-/*===================== 
+/*============================== 
     Sponsor style ENDED
-====================== */
+=============================== */
+/*============================== 
+    Footer style STARTED
+=============================== */
+
+.footer{
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 170px;
+}
+
+.footer-desc{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-desc p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #424242;
+}
 
 
+/*============================== 
+    Footer style ENDED
+=============================== */
+
+/* ==========================
+         MEDIA QUARRY
+ ===========================*/
+
+ /* Mobile Device */
+ @media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-bar ul{
+        flex-direction: column;
+    }
+    .menu-bar ul li{
+        list-style: none;
+        padding-left: 0;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .logo-title {
+        font-size: 40px;
+        padding-left: 35px;
+        margin: 0;
+    }
+    .banner-section {
+        flex-direction: column;
+        text-align: start;
+        padding-left: 35px;
+        margin-bottom: 50px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .banner-description .title{
+        font-size: 45px;
+        margin: 0;
+    }
+    .details {
+        margin: 0;
+        color: #727272;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .our-feature {
+        flex-direction: column-reverse;
+    }
+    .our-feature-details {
+        padding-left: 35px;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+    .img-items {
+        grid-template-columns: 1fr;
+    }
+    .experience {
+        margin-top: 0;
+        padding-left: 35px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .exp-item {
+        width: 100%;
+        padding: 5px;
+    }
+    
+.experience-title{
+    font-size: 35px;
+}
+    
+    .exp-item-descr {
+        padding-right: 22px;
+    }
+    .btn-exp{
+        display: none;
+    }
+    .some-fact-title{
+        font-size: 35px;
+    }
+    .some-fact-desc{
+        width: 100%;
+    }
+    .some-fact{
+        padding-left: 35px;
+    }
+    .some-fact-items {
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 0;
+	align-items: center;
+    }
+    .item:hover{
+        transform: translate3d(0px, 0px, 0px);
+    }
+    .item{
+        border: 1px solid #FF900E;
+        padding: 35px;
+        border-radius: 8px;
+        transition: 0.8s;
+    }
+    .item {
+        width: 50%;
+        margin-left: 35px;
+    }
+    .services{
+        margin-top: 10px;
+        padding-left: 35px;
+    }
+    .services-title{
+        font-size: 35px;
+    }
+    .services-items {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .sponsor-logo{
+        flex-direction: column;
+        align-items: center;gap: 20px;
+        margin-top: 50px;
+    }
+    .footer{
+        text-align: center;
+        background: #FFF4E7;
+        border-radius: 8px;
+        padding: 0px;
+        margin: 10px;
+    }
+    .footer .footer-desc p{
+        font-size: 16px;
+    }
+ }
 
