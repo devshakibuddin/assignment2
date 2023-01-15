@@ -262,6 +262,107 @@ our-feature style STARTED
 /*===================== 
     Some Fact style ENDED
 ====================== */
+/*===================== 
+    Services style started
+====================== */
+
+.services{
+    margin-top: 90px;
+}
+
+.services-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    border-bottom: 5px solid rgb(210, 112, 32);
+    width: 210px;
+    padding-bottom: 20px;
+}
+
+.services-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.service-item{
+    border-radius: px;
+    box-shadow: 0px 0px 5px 0px #00000030;
+    padding: 90px 20px;
+    transition: 1s;
+}
+
+.service-item:hover{
+    background-color: rgba(0, 0, 0, 0.806);
+    color: #FFF;
+}
+.service-icon{
+    font-size: 40px;
+    margin: 0;
+}
+
+.service-desc{
+    color: #727272;
+}
+.service-item-title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+
+
+/*===================== 
+   Services style ENDED
+====================== */
+
+
+
+
+
+
+
+
+
+/*===================== 
+    Sponsor style started
+====================== */
+
+.sponsor{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 180px;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin: 0;
+}
+
+.sponsor-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 540px;
+}
+
+.sponsor-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+
+/*===================== 
+    Sponsor style ENDED
+====================== */
 
 
 
